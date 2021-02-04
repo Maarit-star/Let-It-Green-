@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/stylesForNoPlans.css">
+    <title>No Plans</title>
+</head>
+<body onload="lisaaArvo()">
+    <section class="showcase">
+        <header>
+            <div class="toggle"></div>
+        </header>
+    <!-- div class="bg-image"> -->
+        <div class="boxForText">
+            <h1>Hakutulos</h1>
+            <p id="hakutulos"></p>
+            <p>Ei lötynyt kaavasuunnitelmia tälle alueelle.</p>
+            <br>
+            <input class="etsiNappi" type="button" onclick="moveToHae()" value="Etsi toista aluetta">
+        </div>
+   <!--  </div> -->
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="areas.html">Suunnitelmat</a></li>
+            <li><a id="link3" href="otherAreas.html">Hae</a></li>
+            <li><a href="contact.html">Ota yhteyttä</a></li>
+        </ul>
+    </div>
+    <!--JavaScript high-performance animations >> https://cdnjs.com/libraries/gsap -->
+    <script src="./JS/appForNoPlans.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleForIndex.css">
+    <title>letitgreen Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <div class="toggle"></div>
+            </header>
+            <!--playsinlinellä toimii myös mobiilissa-->
+            <video playsinline autoplay muted loop alt="./forest2.jpg" id="forestBackground">
+                <source src="./videos/hitaampi2.mp4" type="video/mp4" />
+                    <source src="./videos/hitaampi2.webm" type="video/webm"/>
+            </video>
+            <!-- video src="./videos/hitaampi2.mp4" muted loop autoplay></video> -->
+            <!-- Jos haluaa overlayn videon päälle, niin div tähän-->
+            <!-- <div class="overlay"></div> -->
+                <div class="text">
+                    <h1>kaupungistuminen edistyy, <br>
+                    metsät väistyvät</h1>
+                    <p>Tämän sivuston tavoite on tuoda näkyväksi Helsingin asuinalueiden kutistuvia luontotaskuja. Sen lisäksi, näkyväksi
+                    muodostuu myös ei kestävä maankäyttö. Elämme uutta arkea pandemian keskellä ja tuntuu absurdilta ajatukselta
+                    jatkaa uudisrakentamista luontoa raivaten. Juuri tänä vaikeana aikana kyseisten viheralueiden ja metsien tärkeys
+                    korostuu kaupunkilaisten hyvinvoinnissa.</p>
+                    <a href="areas.html" class="alueet-nappi">suunnitelmat</a>
+                </div>
+                <div class="videoBy">Video: Jukka Ruuskanen</div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a id="link1" href="index.html">Etusivu</a></li>
+            <li><a href="areas.html">Suunnitelmat</a></li>
+            <li><a href="otherAreas.html">Hae</a></li>
+            <li><a href="contact.html">Ota yhteyttä</a></li>
+        </ul>
+    
+    </div>
+    <!--JavaScript high-performance animations >> https://cdnjs.com/libraries/gsap -->
+    <script src="./JS/app.js"></script> 
+</body>
+</html>

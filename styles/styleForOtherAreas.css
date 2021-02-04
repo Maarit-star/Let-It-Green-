@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  background-image: url("../img/forestFromAbove.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.showcase.active {
+  right: 300px;
+}
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  width: 60px;
+  height: 60px;
+  background: url("../symbols/menu.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active {
+  background: url("../symbols/close.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.boxForText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 45%;
+  background-color: rgba(255, 230, 230, 0.8);
+  padding: 20px 50px;
+}
+.boxForText h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: black;
+  text-align: center;
+  padding-top: 18px;
+}
+.boxForText p {
+  text-align: center;
+  color: black;
+  font-weight: 200;
+}
+.boxForText #userInput {
+  width: 70%;
+  background: transparent;
+  border: 1px solid grey;
+  height: 30px;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#userInput,
+select,
+textarea {
+  color: rgb(0, 0, 0, 0.6);
+}
+.boxForText .etsiNappi {
+  margin-top: 10px;
+  background: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  outline: none;
+}
+.boxForText .etsiNappi:hover {
+  letter-spacing: 6px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.menu ul li a:hover {
+  color: green;
+}
+#link3 {
+  color: green;
+}
+
+@media (max-width: 1000px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .boxForText {
+    width: 100%;
+    height: 50%;
+  }
+  .boxForText .userInput {
+    width: 100%;
+  }
+  .toggle {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+}

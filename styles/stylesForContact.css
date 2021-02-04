@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  background-image: url("../img/forestFromAbove.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  z-index: 2;
+  transition: 0.5s;
+  flex-direction: column;
+}
+
+.showcase.active {
+  right: 300px;
+}
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  width: 60px;
+  height: 60px;
+  background: url("../symbols/menu.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active {
+  background: url("../symbols/close.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.boxForText {
+  width: 55%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 230, 230, 0.8);
+}
+.form-group {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+.form-group label {
+  color: black;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding-top: 7px;
+  font-size: 1em;
+  border: 1px solid grey;
+  margin-top: 2px;
+  background-color: transparent;
+}
+#message {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+}
+button[type="submit"] {
+  margin-top: 10px;
+  background: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  border: 1px solid grey;
+  outline: none;
+}
+
+button[type="submit"]:hover {
+  border: 1px solid white;
+  letter-spacing: 6px;
+  color: white;
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#status.success {
+  background-color: green;
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: orangered;
+  color: black;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.boxForText h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: black;
+  text-align: center;
+  padding-top: 18px;
+}
+.boxForText #userInput {
+  width: 70%;
+  background: transparent;
+  border: 1px solid grey;
+  height: 30px;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#userInput,
+select,
+textarea {
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.menu ul li a:hover {
+  color: green;
+}
+#link4 {
+  color: green;
+}
+
+@media (max-width: 1000px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .boxForText {
+    width: 100%;
+    height: 40%;
+  }
+  .boxForText .userInput {
+    width: 100%;
+  }
+  .toggle {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+}
